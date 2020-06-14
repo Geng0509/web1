@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>美食网</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+         }
+        .clear::after {
+            content: '';
+            height: 0;
+            display: block;
+            clear: both;
+        }
+        .header{
+            background: white;
+            height:100px;
+        }
+        .container{
+            width:1200px;
+            margin:0 auto;
+        }
+        .logo{
+            margin-top:12px;
+            padding-top:12px;
+            float:left;
+        }
+        .nav {
+            float: left;
+            margin-top: 38px;
+        }
+        .nav li {
+                float: left;
+                width: 122px;
+                text-align: center;
+                border-right: 1px solid black;
+                font-size: 16px;
+                font-weight: bold;
+        }
+        .nav a{
+            color:rgba(0,0,0,1);
+        }
+        .form{
+            float:right;
+            margin-top:34px;
+        }
+        .search{
+            float: left;
+            width: 145px;
+            padding: 9px;
+            border: 1px solid #999;
+        }
+        .submit{
+                float: left;
+                width: 36px;
+                height: 36px;
+                border: 1px solid #999;
+                background: #999 url(file:///C:/Users/Lenovo/Pictures/Camera%20Roll/%E7%BE%8E%E9%A3%9F/search.png) no-repeat center center;
+        }
+        .banner { 
+            height: 550px;
+            position: relative;
+        }
+       .banner li {
+            width: 50%;
+            height: 550px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .text{
+            position:absolute;
+            left:14%;
+            top:47px;
+            float:center;
+        }
+       .title {
+            text-align: center;
+            padding-top: 35px;
+            height: 35px;
+        }
+        .title .small {
+            font-size: 20px;
+            padding-top: 15px;
+            color:red;
+        }
+        .ad {
+            height: 350px;
+            width: 100%;
+            background: url(file:///C:/Users/Lenovo/Pictures/Camera%20Roll/%E7%BE%8E%E9%A3%9F/banner2.jpg) no-repeat center;
+        }
+
+        .product img {
+            vertical-align: bottom;
+        }
+        .product li {
+            position: relative;
+        }
+        .product-big {
+            float: left;
+        }
+
+        .product li div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 45px;
+            background: rgba(208, 61, 61, 0.8);
+            color: white;
+            text-align: center;
+        }
+        .product-big li div {
+            height: 58px;
+        }
+        .product-small {
+            float: right;
+            width: 700px;
+        }
+        .product-small li {
+            float: left;
+        }
+        .footer{
+            height:120px;
+            line-height: 120px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-top">
+            <div class="container clear">
+                <img src="C:\Users\Lenovo\Pictures\Camera Roll\美食\logo.png" alt="logo图" class="logo"/>
+                <ul class="nav clear">
+                    <li class="first"><a href="#">首页</a></li>
+                    <li><a href="#">菜谱</a></li>
+                    <li><a href="#">食材</a></li>
+                    <li><a href="#">健康</a></li>
+                    <li><a href="#">专题</a></li>
+                    <li class="last"><a href="#">社区</a></li>
+                </ul>
+                <form class="form clear">
+                    <input type="text" placeholder="搜一搜" class="search" />
+                    <input type="button" class="submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <ul>
+            <li class="banner-one">           
+            <img src="C:\Users\Lenovo\Pictures\Camera Roll\美食\banner1.jpg" alt="" class='text'>
+            </li>
+        </ul>
+    </div>
+    <div class="form2">
+        <form>
+            <table cellpadding="20" border="20" cellspacing="0" align="center" bordercolor="pink">
+                <caption>
+                    <h1>快速登录</h1>  
+                </caption>
+                <tr>
+                    <td align="center">
+                        <input type="text" name="Use Name" value="User Name:"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="password" name="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="Login" name="login"/>
+                    </td>
+                </tr>
+            </table>
+        </form>    
+    </div>
+    <div class="title">
+        <div class="container">
+            <p class="small">一周推荐</p>
+        </div>
+    </div>
+    <div class="ad"></div>
+    <div class="container product clear">
+        <ul class="product-big">
+            <li class="product-item">
+                <img src="C:\Users\Lenovo\Pictures\Camera Roll\美食\香辣虾.jpg" alt="" width="497" height="492" />
+                <div class="product-info">
+                    <h3>香辣虾</h3>
+                    <p>秘制招牌</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="product-small clear">
+            <li class="product-item">
+                <img src="C:\Users\Lenovo\Pictures\Camera Roll\美食\麻婆豆腐.jpg" alt="" width="342" height="242" />
+                <div class="product-info">
+                    <h3>麻婆豆腐</h3>
+                    <p>麻辣香</p>
+                </div>
+            </li>
+            <li class="product-item">
+                <img src="C:\Users\Lenovo\Pictures\Camera Roll\美食\寿司.jpg" alt="" width="342" height="242" />
+                <div class="product-info">
+                    <h3>寿司</h3>
+                    <p>日本料理</p>
+                </div>
+            </li>
+            <li class="product-item">
+                <img src="C:\Users\Lenovo\Pictures\Camera Roll\美食\糖醋里脊.jpg" alt="" width="342" height="242" />
+                <div class="product-info">
+                    <h3>糖醋里脊</h3>
+                    <p>酸甜可口</p>
+                </div>
+            </li>
+            <li class="product-item">
+                <img src="C:\Users\Lenovo\Pictures\Camera Roll\美食\鱼香肉丝.jpg" alt="" width="342" height="242" />
+                <div class="product-info">
+                    <h3>鱼香肉丝</h3>
+                    <p>下饭必备</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        版权所有 © 2004-2020 美食天下 保留所有权利 -  京公网安备 11010502031041号 / 京ICP证090244号 / 京ICP备10020153号
+    </div>
+</body>
+</html>
